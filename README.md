@@ -52,3 +52,20 @@
 *   **Complaint Assignment**: Assign complaints to agents for resolution and ensure timely, efficient handling.
 *   **User and Agent Management**: Manage accounts (registration, login, profile info) and enforce privacy regulations and terms of service.
 *   **Continuous Improvement**: Implement measures to improve platform functionality, security, and user experience, while addressing feedback for better service delivery.
+
+
+# MVC Architectural Pattern - Online Complaint Registration
+
+The backend application follows the Model-View-Controller (MVC) architectural pattern to ensure modularity, maintainability, and scalability.
+
+## Layers
+* **Model Layer (Data Layer)**: Handles all data-related logic, including database schemas defined using Mongoose for MongoDB.
+* **Controller Layer**: Acts as an intermediary; it receives incoming requests, processes input, calls appropriate model methods, and returns responses.
+* **View Layer (Routing Layer)**: Implemented as the routing layer for the REST API, defining endpoints (GET, POST, PUT, DELETE) that invoke controller functions.
+
+## Advantages
+* **Separation of Concerns**: Clearly defined responsibilities improve readability.
+* **Scalability**: New features are easily added via new routes, controllers, and models.
+* **Reusability**: Logic can be reused across the application.
+* **Testing**: Each layer can be tested independently.
+* **Collaboration-Friendly**: Developers can work on different layers simultaneously without conflict.
