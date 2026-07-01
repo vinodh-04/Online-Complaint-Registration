@@ -6,24 +6,24 @@
 - **Database:** MongoDB
 
 
-# Project Features
+## System Features & Implementation Details
 
-### 1. User Registration & Profile Creation
-* **Secure Sign-up**: Users can register using email and password with secure authentication protocols.
-* **Profile Creation**: Stores user details including name, contact info, and ID details for future complaint tracking.
+1. **User Registration & Profile Creation**
+   - Secure sign-up using email and password with authentication protocols.
+   - Stores user details including name, contact info, and ID for complaint tracking.
 
-### 2. Officer Browsing & Complaint Type Filtering
-* **Search and Filter Officers**: Users can filter complaint categories or departments (e.g., Police, Electricity, Municipality).
-* **Real-time Status Tracking**: Users can view officer availability or the live status of complaints (e.g., Pending, In Progress, Resolved).
+2. **Officer Browsing & Complaint Type Filtering**
+   - Users can filter complaints by category or department (e.g., Police, Electricity, Municipality).
+   - Real-time status tracking for complaints.
 
-### 3. Complaint Lodging & Management
-* **Easy Complaint Form**: Users lodge complaints by selecting category, writing a description, and attaching documents/images.
-* **Automated Updates**: Email/SMS notifications sent for submission, updates, and resolution to keep users informed.
+3. **Complaint Lodging & Management**
+   - Easy complaint form for categories, descriptions, and document attachments.
+   - Automated email/SMS notifications for submission and resolution updates.
 
-### 4. Officer's Dashboard
-* **Manage Assigned Complaints**: Officers can see, filter, and update complaints assigned to them.
-* **Action Logging**: Officers can add status updates, action notes, and attach resolution reports securely.
+4. **Officer's Dashboard**
+   - Officers can view, filter, and update assigned complaints.
+   - Secure action logging and resolution reporting.
 
-### 5. Admin Controls & Verification
-* **Officer Approval System**: Admins verify and approve officer accounts to maintain system integrity.
-* **System Monitoring**: Admin has access to analytics, can resolve disputes, handle escalations, and maintain platform security.
+5. **Admin Controls & Verification**
+   - Approval system for officer accounts to maintain integrity.
+   - Analytics access for monitoring, dispute resolution, and security.
