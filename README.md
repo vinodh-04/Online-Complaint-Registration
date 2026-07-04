@@ -69,3 +69,9 @@ The backend application follows the Model-View-Controller (MVC) architectural pa
 * **Reusability**: Logic can be reused across the application.
 * **Testing**: Each layer can be tested independently.
 * **Collaboration-Friendly**: Developers can work on different layers simultaneously without conflict.
+
+## Roles and Responsibilities
+1. **User Registration**: Citizens register with email, phone, and password to lodge complaints.
+2. **Browsing & Lodging**: Users browse categories and submit complaints with issue details and images.
+3. **Admin Approval**: Admins review backend access, verify officials, and monitor for spam.
+4. **Officer Task Management**: Assigned officers track, update status, and resolve complaints in the system.
