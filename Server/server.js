@@ -1,7 +1,10 @@
 const express = require('express');
 const cors = require('cors');
-const mongoose = require('mongoose'); // 1. Added mongoose import
+const mongoose = require('mongoose');
 require('dotenv').config();
+
+const authRoutes = require('./routes/authRoutes');
+const complaintRoutes = require('./routes/complaintRoutes'); // 1. Added complaint routes import
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -10,10 +13,14 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// 2. Added MongoDB Connection block
+// MongoDB Connection
 mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log('MongoDB Database connected successfully!'))
     .catch((err) => console.error('Database connection error:', err));
+
+// Routes
+app.use('/api/auth', authRoutes);
+app.use('/api/complaints', complaintRoutes); // 2. Added complaint API mount point
 
 // Test Route
 app.get('/', (req, res) => {
