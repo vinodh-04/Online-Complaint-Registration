@@ -1,0 +1,60 @@
+:root {
+  --brand: #2b3a67;
+  --brand-light: #4b5c9e;
+  --accent: #ff8c42;
+  --bg: #f4f6fb;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.btn-brand {
+  background-color: var(--brand);
+  color: #fff;
+  border: none;
+}
+
+.btn-brand:hover {
+  background-color: var(--brand-light);
+  color: #fff;
+}
+
+.badge-status {
+  font-size: 0.75rem;
+  padding: 0.35em 0.65em;
+}
+
+.card-complaint {
+  border-left: 4px solid var(--brand);
+  transition: transform 0.15s ease;
+}
+
+.card-complaint:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.chat-bubble {
+  max-width: 75%;
+  padding: 0.5rem 0.9rem;
+  border-radius: 14px;
+  margin-bottom: 0.5rem;
+}
+
+.chat-bubble.mine {
+  background-color: var(--brand);
+  color: #fff;
+  margin-left: auto;
+}
+
+.chat-bubble.theirs {
+  background-color: #e9ecef;
+  color: #212529;
+}
